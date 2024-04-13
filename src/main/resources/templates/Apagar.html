@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Apagar</title>
+</head>
+<body>
+<form  th:action="@{/excluir1/{id}(id=${pessoa.id})}"  method="POST"></form>
+
+    <input th:value="${pessoa.nome}">
+    <input type="password" th:value="${pessoa.senha}">
+    <input th:value="${id}">
+
+    <button type="submit"> Excluir </button>
+</body>
+</html>

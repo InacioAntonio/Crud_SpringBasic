@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar/Apagar</title>
+</head>
+<body>
+    <h1>Editar</h1>
+    <form action="/editar" method="POST">
+        <label> Nome:</label>
+        <input th:value="${pessoa.nome}">
+        <input type="password" th:value="${pessoa.senha}">
+        <input th:value="${id}">
+        <button type="submit">Editar</button>
+    </form>
+</body>
+</html>
